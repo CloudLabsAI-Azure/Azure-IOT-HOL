@@ -41,11 +41,11 @@
 
 10. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
 
-12. Now you can see Azure Portal Dashboard, click on **Resource groups** to see the resource groups.
+11. Now you can see Azure Portal Dashboard, click on **Resource groups** to see the resource groups.
 
    ![](images/resource_group.png)
 
-13. Click on the azure-IOT-SUFFIX Resource group and confirm whether you have all the below resources deployed successfully.
+12. Click on the azure-IOT-SUFFIX Resource group and confirm whether you have all the below resources deployed successfully.
 
    ![](images/resource_group3.png)
 
