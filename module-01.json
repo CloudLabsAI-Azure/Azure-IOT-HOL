@@ -1,0 +1,42 @@
+[ {
+    "Name": "Azure IoT Hands on Labs",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Azure-IOT-HOL/prod/IoTHub/README.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Azure-IOT-HOL/prod/IoTHub-PiSimulator/README.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Azure-IOT-HOL/prod/timeseriesinsights/README.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Azure-IOT-HOL/prod/EventGrid/README.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Azure-IOT-HOL/prod/DatalakeStore/README.md",
+        "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Azure-IOT-HOL/prod/CosmosDB/README.md",
+        "Order": 6
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Azure-IOT-HOL/prod/DatalakeAnalytics/README.md",
+        "Order": 7
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Azure-IOT-HOL/prod/DeviceSimulator/README.md",
+        "Order": 8
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Azure-IOT-HOL/prod/automaticdeviceconfiguration/README.md",
+        "Order": 9
+      },
+    ]
+  } ]   
