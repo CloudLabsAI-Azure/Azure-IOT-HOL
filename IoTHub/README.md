@@ -49,7 +49,7 @@
 
 13. Click on the azure-IOT-SUFFIX Resource group and confirm whether you have all the below resources deployed successfully.
 
-   ![](images/resource_group3.png)
+   ![](images/resource_group3.png.jpg)
 
    * In the Resource group we have one **Virtual Machine**, **IOTHUB**, **Storage account** and **Log Analytics workspace** deployed.
  
