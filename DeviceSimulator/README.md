@@ -27,7 +27,8 @@ Learn how to set up a Device Simulator using Azure IoT Suite and Connect to IoTH
 3. Then save the parameters.json file.
 4. Now Open Command Prompt as **Run as Administrator** and navigate to deployment file.
 
-```cd C:\azure-iot-pcs-device-simulation\azure-iot-pcs-device-simulation-master\deployment
+```
+cd C:\azure-iot-pcs-device-simulation\azure-iot-pcs-device-simulation-master\deployment
 
 ```
 5. Now install the device simulator with the commmands below:
