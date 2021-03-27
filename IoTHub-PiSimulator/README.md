@@ -14,37 +14,34 @@ Connect a Simulator to your IoT Hub and stream data.
 
 ## Create a Device
 
-* Go To your IoT Hub in the portal and click on **IoT Devices** and  Click on **+ NEW**
+1. Go To your IoT Hub in the Azure portal, click on **IoT devices** and Click on **+ NEW**
 
+   ![Resource Group](images/new.png)
 
-![Resource Group](images/new.png)
+1. Enter a **Device ID** as **pi-simulator** and click **Save**. 
 
-* Enter a **Device ID** and click **Save**. 
+   ![Resource Group](images/new1.png)
 
-![Resource Group](images/new1.png)
+1. Click on the device and copy the Primary Connection String. 
 
-* Click on the device and copy the primary key connection string. 
+   ![Resource Group](images/connection-string.png)
 
-![Resource Group](images/connection-string.png)
+1. Click on the Pi Simulator icon on the JumpVm desktop.  
 
-* Click on the link below to go to the PI Simulator 
+1. Replace the connection string with the Primary Connection String copied in the previous step.
 
-[PI Simulator](https://azure-samples.github.io/raspberry-pi-web-simulator/#GetStarted)
+   ![Resource Group](images/pi_connection_string_before.png)
 
-* Replace the connection string with the primary key connection string copied in the previous steps
+1. After you copy the connection string, it should look like below.
 
-![Resource Group](images/pi_connection_string_before.png)
+   ![Resource Group](images/pi_connection_string_after.png)
 
-* After you copy the connection string should look like below
+1. Click Run and start sending messages. LED will start blinking.
 
-![Resource Group](images/pi_connection_string_after.png)
+   ![Resource Group](images/pi_message.png)
 
-* Click Run and start sending messages. LED will start blinking
+1. Messages will start flowing into IoT Hub
 
-![Resource Group](images/pi_message.png)
+   ![Resource Group](images/iothub_messages.png)
 
-* Messages will start flowing into IoT Hub
-
-![Resource Group](images/iothub_messages.png)
-
->**You will work with Labs in the Next Module to Visualize the Data flowing into IoT Hub**
+> **In the next module you can Visualize the Data flowing into IoT Hub**
