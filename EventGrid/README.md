@@ -95,6 +95,8 @@ Create Email template
 
 ![Create email template](images/11_Send_Email.png)
 
+Now **Save** the template so that the URL is generated.
+
 ## Copy Request URL
 
 ![Copy Request URL](images/12_eventurl.png)
