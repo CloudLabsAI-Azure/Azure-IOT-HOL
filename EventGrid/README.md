@@ -95,6 +95,8 @@ Create Email template
 
 ![Create email template](images/11_Send_Email.png)
 
+Now **Save** the template so that the URL is generated.
+
 ## Copy Request URL
 
 ![Copy Request URL](images/12_eventurl.png)
@@ -109,7 +111,7 @@ Click on Event Subscription
 
 ![Integrated with IoTHub](images/14_empty_event_subscription.png "")
 
-Copy the URL from previous steps into Subscriber Endpoint and click create
+Copy the URL from previous steps into Subscriber Endpoint and add a unique name and click on create.
 
 ![Integrated with IoTHub](images/15_device_events.png)
 

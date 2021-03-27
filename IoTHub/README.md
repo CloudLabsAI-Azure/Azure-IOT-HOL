@@ -4,9 +4,7 @@
 
 1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab.
 
-2. To get the lab environment details, you can select the **Lab Environment** tab. Additionally, the credentials will also be sent to your email address provided during registration. You will see Deployment ID value on **Lab Environment** tab, use it wherever you see SUFFIX or DeploymentID in lab steps. 
-
-3. You can also open the Lab Guide on Separate full window by selecting the **Arrow** icon on the upper right corner.
+2. To get the **lab environment details**, you can select the **Lab Environment** tab. Additionally, the credentials will also be sent to your email address provided during registration. You will see Deployment ID value on **Lab Environment** tab, use it wherever you see SUFFIX or DeploymentID in lab steps. 
 
 ## Login to Azure Portal
 
@@ -33,7 +31,7 @@
 
    ![](images/enter_email.png)
 
-7. Now enter the password which is provided in the Lab Environment tab and click on **Sign in**. 
+7. Now enter the password which is provided in the **Lab Environment** tab and click on **Sign in**. 
 
    ![](images/enter_password.png)
 
@@ -43,15 +41,15 @@
 
 10. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
 
-12. Now you can see Azure Portal Dashboard, click on **Resource groups** to see the resource groups.
+11. Now you can see Azure Portal Dashboard, click on **Resource groups** to see the resource groups.
 
    ![](images/resource_group.png)
 
-13. Click on the azure-IOT-SUFFIX Resource group and confirm whether you have all the below resources deployed successfully.
+12. Click on the azure-IOT-SUFFIX Resource group and confirm whether you have all the below resources deployed successfully.
 
    ![](images/resource_group3.png)
 
-   * In the Resource group we have one **Virtual Machine**, **IOTHUB**, **Storage account** and **Log Analytics workspace** deployed.
+* All the required Azure resources for this workshop are deployed in this Resource group.
  
  # Introduction to Azure IoT Hub
 
