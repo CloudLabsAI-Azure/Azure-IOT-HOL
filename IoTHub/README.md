@@ -116,17 +116,15 @@ A device must be registered with your IoT hub before it can connect. In this exe
 
 1. Run the following command in Azure Cloud Shell to create the device identity.
 
-
    ```
    az iot hub device-identity create --hub-name YourIoTHubName --device-id MyNodeDevice
    ```
 
-**YourIoTHubName** : Replace this placeholder in the command with the name of your IoT hub.
+   **YourIoTHubName** : Replace this placeholder in the command with the name of your IoT hub.
 
-**MyNodeDevice** : The name of the device you're registering. Use *MyNodeDevice* as shown. If you choose a different name for your device, you need to use that name throughout this article, and update the device name in the sample applications before you run them.
+   **MyNodeDevice** : The name of the device you're registering. Use *MyNodeDevice* as shown. If you choose a different name for your device, you need to use that name throughout this article, and update the device name in the sample applications before you run them.
 
-> **Note** : If you get an error running device-identity, install the Azure IoT Extension for Azure CLI. Run the following command to add the Microsoft Azure IoT Extension for Azure CLI to your Cloud Shell instance. The IoT Extension adds commands that are specific to IoT Hub, IoT Edge, and IoT Device Provisioning Service (DPS) to Azure CLI.
-
+   > **Note** : If you get an error running device-identity, install the Azure IoT Extension for Azure CLI. Run the following command to add the Microsoft Azure IoT Extension for Azure CLI to your Cloud Shell instance. The IoT Extension adds commands that are specific to IoT Hub, IoT Edge, and IoT Device Provisioning Service (DPS) to Azure CLI.
 
    ```
    az extension add --name azure-iot
@@ -138,16 +136,17 @@ A device must be registered with your IoT hub before it can connect. In this exe
    iot hub device-identity connection-string show --hub-name YourIoTHubName --device-id MyNodeDevice --output table
    ```
 
-**YourIoTHubName** : Replace this placeholder in the command with the name of your IoT hub.
+   **YourIoTHubName** : Replace this placeholder in the command with the name of your IoT hub.
 
-Make a note of the device connection string, which looks like:
+   Make a note of the device connection string, which looks like:
 
-HostName={YourIoTHubName}.azure-devices.net;DeviceId=MyNodeDevice;SharedAccessKey={YourSharedAccessKey}
+   HostName={YourIoTHubName}.azure-devices.net;DeviceId=MyNodeDevice;SharedAccessKey={YourSharedAccessKey}
 
-You use this value later in the lab.
+   You use this value later in the lab.
 
 ## Send DevKit telemetry
-* The DevKit connects to a device-specific endpoint on your IoT hub and sends temperature and humidity telemetry.
+
+The DevKit connects to a device-specific endpoint on your IoT hub and sends temperature and humidity telemetry.
 
 1. Make sure IoT DevKit connect to your computer via USB. Open File Explorer there is a USB mass storage device called AZ3166.
 
