@@ -59,7 +59,7 @@ Compile Script
 
 Click on List more accounts
 
-![Run Samples]images/11_VSCode_Open_Sample_Script_Compile_Select_Account.png)
+![Run Samples](images/11_VSCode_Open_Sample_Script_Compile_Select_Account.png)
 
 Select a Data Lake Analytics Account
 
