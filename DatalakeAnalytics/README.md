@@ -49,6 +49,8 @@ Install VS Code Extension for Data Lake Analytics
 
 Run Samples to learn Data Lake Analytics
 
+Press ctrl+shift+P to get the search bar on the top and search for the **open sample script** option
+
 ![Run Samples](images/09_VSCode_Open_Sample_Script.png)
 
 Compile Script
