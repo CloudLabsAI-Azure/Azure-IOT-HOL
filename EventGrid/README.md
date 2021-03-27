@@ -111,7 +111,7 @@ Click on Event Subscription
 
 ![Integrated with IoTHub](images/14_empty_event_subscription.png "")
 
-Copy the URL from previous steps into Subscriber Endpoint and click create
+Copy the URL from previous steps into Subscriber Endpoint and add a unique name and click on create.
 
 ![Integrated with IoTHub](images/15_device_events.png)
 
