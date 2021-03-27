@@ -99,108 +99,95 @@ This Lab assumes you are using MXChip as the Device
 
 1. DevKit board
 2. Micro-USB cable
-Once Device Connects to IoTHub, messages flow into IoThub
 
    ![](images/iot_hardware1.png)
 
-* To connect the DevKit to your computer, follow these steps:
+To connect the DevKit to your computer, follow these steps:
 
-1. Connect the USB end to your computer.
-2.Connect the Micro-USB end to the DevKit.
-3.The green LED for power confirms the connection.
+1. Connect the Micro-USB end to the DevKit.
+2. Connect the USB end to your computer.
+3. The green LED for power confirms the connection.
 
    ![](images/iot_hardware2.png)
 
 
 ## Register a device
-* A device must be registered with your IoT hub before it can connect. In this quickstart, you use the Azure Cloud Shell to register a simulated device.
+A device must be registered with your IoT hub before it can connect. In this exercise, you can use the Azure Cloud Shell to register a simulated device.
 
 1. Run the following command in Azure Cloud Shell to create the device identity.
 
-YourIoTHubName: Replace this placeholder below with the name you choose for your IoT hub.
 
-MyNodeDevice: The name of the device you're registering. Use MyNodeDevice as shown. If you choose a different name for your device, you need to use that name throughout this article, and update the device name in the sample applications before you run them.
+   ```
+   az iot hub device-identity create --hub-name YourIoTHubName --device-id MyNodeDevice
+   ```
 
-Azure CLI
+**YourIoTHubName** : Replace this placeholder in the command with the name of your IoT hub.
 
-```
-az iot hub device-identity create --hub-name YourIoTHubName --device-id MyNodeDevice
-```
- Note
+**MyNodeDevice** : The name of the device you're registering. Use *MyNodeDevice* as shown. If you choose a different name for your device, you need to use that name throughout this article, and update the device name in the sample applications before you run them.
 
-If you get an error running device-identity, install the Azure IoT Extension for Azure CLI. Run the following command to add the Microsoft Azure IoT Extension for Azure CLI to your Cloud Shell instance. The IoT Extension adds commands that are specific to IoT Hub, IoT Edge, and IoT Device Provisioning Service (DPS) to Azure CLI.
+> **Note** : If you get an error running device-identity, install the Azure IoT Extension for Azure CLI. Run the following command to add the Microsoft Azure IoT Extension for Azure CLI to your Cloud Shell instance. The IoT Extension adds commands that are specific to IoT Hub, IoT Edge, and IoT Device Provisioning Service (DPS) to Azure CLI.
 
-Azure CLI
 
-```
-az extension add --name azure-iot
-```
+   ```
+   az extension add --name azure-iot
+   ```
 
 2. Run the following commands in Azure Cloud Shell to get the device connection string for the device you just registered:
 
-YourIoTHubName: Replace this placeholder below with the name you choose for your IoT hub.
+   ```
+   iot hub device-identity connection-string show --hub-name YourIoTHubName --device-id MyNodeDevice --output table
+   ```
 
-Azure CLI
-```
-iot hub device-identity connection-string show --hub-name YourIoTHubName --device-id MyNodeDevice --output table
-```
+**YourIoTHubName** : Replace this placeholder in the command with the name of your IoT hub.
+
 Make a note of the device connection string, which looks like:
 
 HostName={YourIoTHubName}.azure-devices.net;DeviceId=MyNodeDevice;SharedAccessKey={YourSharedAccessKey}
 
-You use this value later in the quickstart.
+You use this value later in the lab.
 
 ## Send DevKit telemetry
 * The DevKit connects to a device-specific endpoint on your IoT hub and sends temperature and humidity telemetry.
 
-1. Download the latest version of GetStarted firmware for IoT DevKit.
-2. Make sure IoT DevKit connect to your computer via USB. Open File Explorer there is a USB mass storage device called AZ3166.
+1. Make sure IoT DevKit connect to your computer via USB. Open File Explorer there is a USB mass storage device called AZ3166.
 
    ![](images/devkit_1.png)
 
-3. Drag and drop the firmware just downloaded into the mass storage device and it will flash automatically.
+2. Drag and drop the firmware file from the desktop into the mass storage device and it will flash automatically.
 
    ![](images/devkit_2.png)
 
 
-4. On the DevKit, Hold down button B, push and release the Reset button, and then release button B. Your DevKit enters AP mode. To confirm, the screen displays the service set identifier (SSID) of the DevKit and the configuration portal IP address.
+3. On the DevKit, Hold down button B, push and release the Reset button, and then release button B. Your DevKit enters AP mode. To confirm, the screen displays the service set identifier (SSID) of the DevKit and the configuration portal IP address.
 
    ![](images/devkit_3.png)
 
 
-5. Use a Web browser on a different Wi-Fi enabled device (computer or mobile phone) to connect to the IoT DevKit SSID displayed in the previous step. If it asks for a password, leave it empty.
+4. Use a Web browser on a different Wi-Fi enabled device (computer or mobile phone) to connect to the IoT DevKit SSID displayed in the previous step. If it asks for a password, leave it empty.
 
    ![](images/devkit_4.png)
 
 
-6. Open 192.168.0.1 in the browser. Select the Wi-Fi that you want the IoT DevKit connect to, type the Wi-Fi password, then paste the device connection string you made note of previously. Then click Save.
+5. Open 192.168.0.1 in the browser. Select the Wi-Fi that you want the IoT DevKit connect to, type the Wi-Fi password, then paste the device connection string you made note of previously. Then click Save.
 
    ![](images/devkit_5.png)
 
-7. The WiFi information and device connection string will be stored into the IoT DevKit when you see the result page.
+6. The WiFi information and device connection string will be stored into the IoT DevKit when you see the result page.
 
    ![](images/devkit_6.png)
 
-8. The IoT DevKit reboots in a few seconds. On the DevKit screen, you see the IP address for the DevKit follows by the telemetry data including temperature and humidity value with message count send to Azure IoT Hub.
+7. The IoT DevKit reboots in a few seconds. On the DevKit screen, you see the IP address for the DevKit follows by the telemetry data including temperature and humidity value with message count send to Azure IoT Hub.
 
    ![](images/devkit_7.png)
    ![](images/devkit_8.png)
 
 
-9. To verify the telemetry data sent to Azure, run the following command in Azure Cloud Shell:
+8. To verify the telemetry data sent to Azure, run the following command in Azure Cloud Shell:
 
-Azure CLI
-```
-az iot hub monitor-events --hub-name YourIoTHubName --output table
-```
-
-
-
-
-
-
-
-
-
+   ```
+   az iot hub monitor-events --hub-name YourIoTHubName --output table
+   ```
+   
+9. Once Device Connects to IoTHub, messages flow into IoThub. Go back to the Azure portal and open the IoTHub resource from the iot resource group. Check the usage from the overview page.
 
    ![Data Flow](images/06_IoTHub_DeviceCreated_Data_Flowing.png)
