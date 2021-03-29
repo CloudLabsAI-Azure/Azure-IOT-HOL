@@ -45,7 +45,7 @@
 
    ![](images/resource_group.png)
 
-12. click on the resource group named "iot"
+12. Click on the resource group named "iot"
 
    ![](images/resourcegroup4.png)
 
