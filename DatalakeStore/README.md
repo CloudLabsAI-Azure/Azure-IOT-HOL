@@ -8,7 +8,7 @@ Azure Data Lake Store is an enterprise-wide hyper-scale repository for big data 
 
 ## Explore Data in Data Lake Store
 
-1. Open the **Data Lake Store** in *iot* RG in the Azure portal and in the *Overview* page click on **Data Explorer**.
+* Open the **Data Lake Store** in *iot* RG in the Azure portal and in the *Overview* page click on **Data Explorer**.
 
    ![Explore Data](images/03_Datalake_Store_Date_Explore.png)
 
@@ -48,7 +48,7 @@ Azure Stream Analytics is a managed event-processing engine set up real-time ana
 
    ![Save Input](images/11_Save_IoTHub.png)
 
-1. Go back your **Stream Analytics Job** in *iot* RG in the Azure portal and click on **Outputs** as shown in the image below. Add Data Lake Store as Output for Streaming Job
+1. Go back your **Stream Analytics Job** in *iot* RG in the Azure portal and click on **Outputs** as shown in the image below. 
 
    ![Add Data Lake Store](images/12_Add_Data_Lake_Store.png)
 
