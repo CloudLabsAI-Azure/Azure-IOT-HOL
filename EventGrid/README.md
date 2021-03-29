@@ -120,6 +120,7 @@ In this lab you will learn how to
    - **System Topic Name** - Provide a name to the topic to which the events will be published
    - **Endpoint Type** - Select *Web Hook*
    - **Endpoint** - Provide the **HTTP Post URL** from previous steps
+   
    Leave the rest as default as mentioned in the image below and click on **Create**.
 
    ![Integrated with IoTHub](images/15_device_events.png)
