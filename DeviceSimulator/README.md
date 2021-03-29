@@ -16,6 +16,7 @@ Learn how to set up a Device Simulator using Azure IoT Suite and Connect to IoTH
    * **adminPassword**: Provide a password for Virtual Machine.
   
    > **Note** : Pleae make sure you are providing a unique string for the *solutionName* parameter or else the deployment will fail.
+      ![](images/mod-8.png)
 
 3. Save the parameters.json file.
 
@@ -34,27 +35,36 @@ Learn how to set up a Device Simulator using Azure IoT Suite and Connect to IoTH
    ```
    npm run deploy
    ```
-
-Then the script starts running and it might ask you to login multiple times. Please login when required as mentioned in the prompt. The deployment will take approximately 10 minutes to succeed.
+      ![](images/module-8-1.png)
+Then the script starts running and it might ask you to login multiple times. Please login when required as mentioned in the prompt. 
+      ![](images/module-8-3.png)
+      ![](images/module-8-4.png)
+      ![](images/module-8-5.png)
+The deployment will take approximately 10 minutes to succeed.
+      ![](images/module-8-6.png)
 
 6. Once the deployment succeeds, you will be presented with a URL to access the Simulation UI.
+      ![](images/module-8-7.png)
 
 7. A new resource group with a IoTHub resource in it. 
+      ![](images/module-8-8.png)
+
 
 
 ## Stream Data to IoTHub
 
 Get connection string of IoT Hub
-
-![Get Connection String](images/06_get_connection_string.png)
+      ![Get Connection String](images/06_get_connection_string.png)
+      ![](images/module-8-10.png)
 
 Setup simulation with sensors and number of devices
 
-![Simulate Data](images/07_simulate_data.png)
+![](images/module-8-9.png)
 
 Select the frequency of data flowing into IoT Hub 
+      ![](images/module-8-11.png)
 
-![Imported Script](images/08_start_simulation.png "Start Simulation")
+![Imported Script](images/module-8-12.png)
 
 ## New Devices Created in IoTHub
 
