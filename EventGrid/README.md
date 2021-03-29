@@ -105,7 +105,7 @@ In this lab you will learn how to
 
 ## Integrate With IoTHub via Event Grid
 
-1. Go to your IoT Hub in the Azure portal and click on **Events** in the left pane and Click on **+ NEW**
+1. Go to your IoT Hub in the Azure portal and click on **Events** in the left pane.
 
    ![Imported Script](images/13_IoTHub_EventHub.png "Integrated with IoTHub")
 
