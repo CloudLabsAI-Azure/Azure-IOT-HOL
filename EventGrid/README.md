@@ -135,7 +135,7 @@ In this lab you will learn how to
 
    ![Add Device](images/17_add_device.png)
 
-1. You Should get an email notification similarly.
+1. You should get an email notification similarly.
 
    ![Email Notification](images/18_email_generated.png)
 

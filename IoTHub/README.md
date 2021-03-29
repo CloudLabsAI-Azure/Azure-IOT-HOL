@@ -47,7 +47,7 @@
 
 12. Click on the azure-IOT-SUFFIX Resource group and confirm whether you have all the below resources deployed successfully.
 
-   ![](images/resource_group3.png)
+   ![](images/resourcegroup4.png)
 
 * All the required Azure resources for this workshop are deployed in this Resource group.
  
