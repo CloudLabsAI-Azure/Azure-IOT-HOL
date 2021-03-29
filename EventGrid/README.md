@@ -12,7 +12,7 @@ In this lab you will learn how to
 
 ## Create New App using Logic App Designer
 
-1. Go To **Logic App** in *iot* RG in the Azure portal and on the left pane select **Logic app designer**. Scroll down and select the **Blank Logic App** template.
+1. Go to **Logic App** in *iot* RG in the Azure portal and on the left pane select **Logic app designer**. Scroll down and select the **Blank Logic App** template.
 
    ![Create App](images/03_Logic_App_designer.png)
 
@@ -127,7 +127,7 @@ In this lab you will learn how to
 
 ## Add Device and Test Notification
 
-1. Go to your IoT Hub in the Azure portal, on the left pane under Device Management select *IoT Devices* and click on **+ Add**.
+1. Go to your IoT Hub in the Azure portal, on the left pane under *Device Management* select **IoT Devices** and click on **+ Add**.
 
    ![Add Device](images/16_add_device.png)
 
@@ -141,7 +141,7 @@ In this lab you will learn how to
 
 ## Delete Device and Test Notification
 
-1. Go to your IoT Hub in the Azure portal, on the left pane under Device Management select *IoT Devices* and select the device you created in previous step -> Delete
+1. Go to your IoT Hub in the Azure portal, on the left pane under *Device Management* select **IoT Devices** and select the device you created in previous step -> Delete
 
    ![Delete Device](images/19_delete_device.png)
 

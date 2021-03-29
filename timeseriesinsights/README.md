@@ -81,3 +81,8 @@ Select User
 1. Click on Heatmap
 
    ![Visualize Data](images/heatmap.png)
+   ![Visualize Data](images/heatmap1.png)
+
+1. Click on table 
+
+   ![visualize Data](images/table.png)
