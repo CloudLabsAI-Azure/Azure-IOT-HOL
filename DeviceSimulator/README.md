@@ -64,7 +64,7 @@ Setup simulation with sensors and number of devices
 Select the frequency of data flowing into IoT Hub 
       ![](images/module-8-11.png)
 
-![Imported Script](images/08_start_simulation.png "Start Simulation")
+![Imported Script](images/module-8-12.png)
 
 ## New Devices Created in IoTHub
 
