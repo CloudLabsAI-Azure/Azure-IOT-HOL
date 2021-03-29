@@ -51,9 +51,8 @@
 
 * All the required Azure resources for this workshop are deployed in this Resource group.
  
- # Introduction to Azure IoT Hub
+## Introduction to Azure IoT Hub
 
-   
    ![IoT Hub](images/iothub.jpg)
 
 Azure IoT Hub is a fully managed service that enables reliable and secure bidirectional communications between millions of IoT devices and a solution back end. Azure IoT Hub:
@@ -66,7 +65,7 @@ Azure IoT Hub is a fully managed service that enables reliable and secure bidire
 * Provides extensive monitoring for device connectivity and device identity management events.
 * Includes device libraries for the most popular languages and platforms.
 
-## IoTHub: Connect, monitor, and manage billions of IoT assets
+### IoTHub: Connect, monitor, and manage billions of IoT assets
 
 * **Establish** bi-directional communication with billions of IoT devices
 * **Authenticate** per device for security-enhanced IoT solutions
@@ -74,26 +73,26 @@ Azure IoT Hub is a fully managed service that enables reliable and secure bidire
 * **Manage** your IoT devices at scale with device management
 * **Extend** the power of the cloud to your edge device
 
-### In this lab you will
+#### In this lab you will
 
 * Learn to use Simulator to connect to IoT Hub and send Data
 
 * Learn to setup MXChip, connect to IoT Hub and send data
 
-## Connect Device and Send Data to IoThub
+### Connect Device and Send Data to IoThub
 
 This Lab assumes you are using MXChip as the Device
 
    ![MXChip](images/MxChip.jpg)
 
-### Prepare the MXChip by 
+#### Prepare the MXChip by 
 
 * updating firmware
 * connecting to Wifi
 * connecting to Azure to select a subscription and IoTHub
 * uploading device code
 
-## Connect IoT DevKit AZ3166 to Azure IoT Hub
+### Connect IoT DevKit AZ3166 to Azure IoT Hub
 
 * Hook up the following hardware to your computer:
 
@@ -109,7 +108,6 @@ To connect the DevKit to your computer, follow these steps:
 3. The green LED for power confirms the connection.
 
    ![](images/iot_hardware2.png)
-
 
 ## Register a device
 A device must be registered with your IoT hub before it can connect. In this exercise, you can use the Azure Cloud Shell to register a simulated device.
