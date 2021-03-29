@@ -47,7 +47,7 @@
 
 12. click on the resource group named "iot"
 
-   ![](images/resource_group3.png)
+   ![](images/resourcegroup4.png)
 
 * All the required Azure resources for this workshop are deployed in this Resource group.
  
