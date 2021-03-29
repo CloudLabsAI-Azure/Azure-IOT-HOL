@@ -64,6 +64,9 @@ Query for **Tokyo** devices
 
 ## Create a configuration
 
+From IoT Device Configuration select **+ Add Device Congiguration**
+   ![](images/m-9.png)
+
 There are five steps to create a configuration. The following sections walk through each one.
 
 ### Step 1: Name and Label
@@ -98,7 +101,7 @@ You may create a metric for pending settings changes, a metric for errors, and a
 3. Select Next to move to step four.
 
 ```sql
-SELECT deviceId FROM devices WHERE properties.reported.hvacsettings.status='pending'}
+SELECT deviceId FROM devices WHERE properties.reported.hvacsettings.status='pending'
 ```
 
 ```sql

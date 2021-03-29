@@ -94,7 +94,7 @@ This Lab assumes you are using MXChip as the Device
 
 ### Connect IoT DevKit AZ3166 to Azure IoT Hub
 
-* Hook up the following hardware to your computer:
+Hook up the following hardware to your computer:
 
 1. DevKit board
 2. Micro-USB cable
@@ -154,16 +154,13 @@ The DevKit connects to a device-specific endpoint on your IoT hub and sends temp
 
    ![](images/devkit_2.png)
 
-
 3. On the DevKit, Hold down button B, push and release the Reset button, and then release button B. Your DevKit enters AP mode. To confirm, the screen displays the service set identifier (SSID) of the DevKit and the configuration portal IP address.
 
    ![](images/devkit_3.png)
 
-
 4. Use a Web browser on a different Wi-Fi enabled device (computer or mobile phone) to connect to the IoT DevKit SSID displayed in the previous step. If it asks for a password, leave it empty.
 
    ![](images/devkit_4.png)
-
 
 5. Open 192.168.0.1 in the browser. Select the Wi-Fi that you want the IoT DevKit connect to, type the Wi-Fi password, then paste the device connection string you made note of previously. Then click Save.
 
@@ -177,7 +174,6 @@ The DevKit connects to a device-specific endpoint on your IoT hub and sends temp
 
    ![](images/devkit_7.png)
    ![](images/devkit_8.png)
-
 
 8. To verify the telemetry data sent to Azure, run the following command in Azure Cloud Shell:
 
