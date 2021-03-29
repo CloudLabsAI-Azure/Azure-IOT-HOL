@@ -45,9 +45,9 @@
 
    ![](images/resource_group.png)
 
-12. Click on the azure-IOT-SUFFIX Resource group and confirm whether you have all the below resources deployed successfully.
+12. click on the resource group named "iot"
 
-   ![](images/resourcegroup4.png)
+   ![](images/resource_group3.png)
 
 * All the required Azure resources for this workshop are deployed in this Resource group.
  
