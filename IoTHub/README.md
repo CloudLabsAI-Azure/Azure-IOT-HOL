@@ -146,41 +146,43 @@ A device must be registered with your IoT hub before it can connect. In this exe
 
 The DevKit connects to a device-specific endpoint on your IoT hub and sends temperature and humidity telemetry.
 
+1. Download the latest version of [GetStarted firmware](https://aka.ms/devkit/prod/getstarted/latest) for IoT DevKit.
+
 1. Make sure IoT DevKit connect to your computer via USB. Open File Explorer there is a USB mass storage device called AZ3166.
 
    ![](images/devkit_1.png)
 
-2. Drag and drop the firmware file from the desktop into the mass storage device and it will flash automatically.
+1. Drag and drop the firmware just downloaded into the mass storage device and it will flash automatically.
 
    ![](images/devkit_2.png)
 
-3. On the DevKit, Hold down button B, push and release the Reset button, and then release button B. Your DevKit enters AP mode. To confirm, the screen displays the service set identifier (SSID) of the DevKit and the configuration portal IP address.
+1. On the DevKit, Hold down button B, push and release the Reset button, and then release button B. Your DevKit enters AP mode. To confirm, the screen displays the service set identifier (SSID) of the DevKit and the configuration portal IP address.
 
    ![](images/devkit_3.png)
 
-4. Use a Web browser on a different Wi-Fi enabled device (computer or mobile phone) to connect to the IoT DevKit SSID displayed in the previous step. If it asks for a password, leave it empty.
+1. Use a Web browser on a different Wi-Fi enabled device (computer or mobile phone) to connect to the IoT DevKit SSID displayed in the previous step. If it asks for a password, leave it empty.
 
    ![](images/devkit_4.png)
 
-5. Open 192.168.0.1 in the browser. Select the Wi-Fi that you want the IoT DevKit connect to, type the Wi-Fi password, then paste the device connection string you made note of previously. Then click Save.
+1. Open 192.168.0.1 in the browser. Select the Wi-Fi that you want the IoT DevKit connect to, type the Wi-Fi password, then paste the device connection string you made note of previously. Then click Save.
 
    ![](images/devkit_5.png)
 
-6. The WiFi information and device connection string will be stored into the IoT DevKit when you see the result page.
+1. The WiFi information and device connection string will be stored into the IoT DevKit when you see the result page.
 
    ![](images/devkit_6.png)
 
-7. The IoT DevKit reboots in a few seconds. On the DevKit screen, you see the IP address for the DevKit follows by the telemetry data including temperature and humidity value with message count send to Azure IoT Hub.
+1. The IoT DevKit reboots in a few seconds. On the DevKit screen, you see the IP address for the DevKit follows by the telemetry data including temperature and humidity value with message count send to Azure IoT Hub.
 
    ![](images/devkit_7.png)
    ![](images/devkit_8.png)
 
-8. To verify the telemetry data sent to Azure, run the following command in Azure Cloud Shell:
+1. To verify the telemetry data sent to Azure, run the following command in Azure Cloud Shell:
 
    ```
    az iot hub monitor-events --hub-name YourIoTHubName --output table
    ```
    
-9. Once Device Connects to IoTHub, messages flow into IoThub. Go back to the Azure portal and open the IoTHub resource from the iot resource group. Check the usage from the overview page.
+1. Once Device Connects to IoTHub, messages flow into IoThub. Go back to the Azure portal and open the IoTHub resource from the iot resource group. Check the usage from the overview page.
 
    ![Data Flow](images/06_IoTHub_DeviceCreated_Data_Flowing.png)
