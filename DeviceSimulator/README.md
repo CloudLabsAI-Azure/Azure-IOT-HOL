@@ -35,37 +35,54 @@ Learn how to set up a Device Simulator using Azure IoT Suite and Connect to IoTH
    ```
    npm run deploy
    ```
-      ![](images/module-8-1.png)
-Then the script starts running and it might ask you to login multiple times. Please login when required as mentioned in the prompt. 
-      ![](images/module-8-3.png)
-      ![](images/module-8-4.png)
-      ![](images/module-8-5.png)
-The deployment will take approximately 10 minutes to succeed.
-      ![](images/module-8-6.png)
+   ![](images/module-8-1.png)
 
-6. Once the deployment succeeds, you will be presented with a URL to access the Simulation UI.
-      ![](images/module-8-7.png)
+   Then the script starts running and it might ask you to login multiple times. Please login whenever required as mentioned in the prompt.
+      
+   ![](images/module-8-3.png)
 
-7. A new resource group with a IoTHub resource in it. 
-      ![](images/module-8-8.png)
+   ![](images/module-8-4.png)
 
+   ![](images/module-8-5.png)
 
+   The deployment will take approximately 10 minutes to succeed.
+
+   ![](images/module-8-6.png)
+
+6. Once the deployment succeeds, you will be presented with a URL to access the *Simulation UI*. Copy this Simulation UI for future purpose.
+
+   ![](images/module-8-7.png)
+
+7. In the *Azure Portal*, a new resource group with a *solutionName* you provided in the parameter file will be created. You can see that all the required resources for the Device Simulator will be created in this Resource Group. This RG also has an IoTHub deployed in it as shown in the image below. You will be using the resources in this RG for this Module.
+   
+   ![](images/module-8-8.png)
 
 ## Stream Data to IoTHub
 
-Get connection string of IoT Hub
-      ![Get Connection String](images/06_get_connection_string.png)
-      ![](images/module-8-10.png)
+1. Open the IotHub resource deployed in the new RG created in the previous exercise. Under *Settings* in the left pane, click on **Shared access policies** and click on **iothubowner** under the policy as shown in the image below. Copy the **Connection string- primary key**
 
-Setup simulation with sensors and number of devices
+   ![Get Connection String](images/06_get_connection_string.png)
 
-![](images/module-8-9.png)
+1. Open the Device Simulation portal using the *Simulation UI* you received at the end of the last exercise. Click on **Device Models** from the left pane and click on **+ Add Device Models** as mentioned in the screenshot below.
 
-Select the frequency of data flowing into IoT Hub 
-      ![](images/module-8-11.png)
+   ![](images/module-8-10.png)
 
-![Imported Script](images/module-8-12.png)
+1. Now let us add devices. Under the Basic tab provide a name to the **Device Model** amd click on **+ Add data point**. Add the **temperature** and **pressure** Data point with corresponding parameters as mentioned below in the image and click on **Save**.
+
+   ![](images/module-8-9.png)
+
+1. Now click on the **Simulations** from the left pane and click on **+ New Simulation** as mentioned in the screenshot below.
+ 
+   ![](images/module-8-11.png)
+
+1. In the *Simulation setup* page, provide a **Simulation Name**, simulation duration as **Run indefinitely** and click on **+ Add a device type**. Select the **Device Model** that you created in the previous steps, enter amount as **5**, verify that Message/Sec is **0.5** and *HH:MM:SS* is **00:00:10**. This is set the frequency of data flowing into IoT Hub. Now click on **Start simulation** to start the simulation.
+
+   ![Imported Script](images/module-8-12.png)
+
+1. Now you can see that the test Simulation is running.
 
 ## New Devices Created in IoTHub
+
+1. To check the new device created, go to the IotHub resource deployed in the new RG. Under *Explorers* in the left pane, click on **IoT devices** and scroll down to view the devices.
 
 ![Simulation Devices](images/09_simulated_devices.png)
