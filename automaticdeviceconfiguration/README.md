@@ -73,7 +73,7 @@ In this lab you will learn how to
 1. Copy the below mentioned query and query for **Tokyo** devices. You can see the only the **Tokyo** HVAC devices.
    
    ```
-   tags.location.city='Shinagawa'
+   tags.location.city='Tokyo'
    ```
 
    ![Create App](images/querytokyo.png)
