@@ -1,18 +1,18 @@
 # Cold Path Storage
 
-## Data Lake Store and Stream Data from IoTHub using Azure Stream Analytics
+## Data Lake Storage and Stream Data from IoTHub using Azure Stream Analytics
 
 ![Header Image](images/datalakestore.jpg)
 
 Azure Data Lake Store is an enterprise-wide hyper-scale repository for big data analytic workloads. Azure Data Lake enables you to capture data of any size, type, and ingestion speed in one single place for operational and exploratory analytics. Data Lake Store can store trillions of files. A single file can be larger than one petabyte in size. This makes Data Lake Store ideal for storing any type of data including massive datasets like high-resolution video, genomic and seismic datasets, medical data, and data from a wide variety of industries.
 
-## Explore Data in Data Lake Store
+## Explore Data in Data Lake Storage
 
-* Open the **Data Lake Store** in *iot* RG in the Azure portal and in the *Overview* page click on **Data Explorer**.
+1. Open the **Data Lake Storage Gen1** in *iot* RG in the Azure portal and in the *Overview* page click on **Data Explorer**.
 
    ![Explore Data](images/03_Datalake_Store_Date_Explore.png)
 
-### Create Folders in Data Lake Store
+### Create Folders in Data Lake Storage
 
 Create \workshop\streaming folder to store Streaming data coming from your device through IoTHub using Stream Analytics Job
 
@@ -24,7 +24,7 @@ Create \workshop\streaming folder to store Streaming data coming from your devic
 
    ![Explore Data](images/05_Datalake_Store_Date_Explore_create_folder_workshop_streaming.png)
 
-1. You should have the folder structure below in place to start streaming data to data lake store.
+1. You should have the folder structure below in place to start streaming data to data lake storage.
 
    ![Explore Data](images/06_Datalake_Store_Date_Explore_created_folder.png)
 
@@ -48,19 +48,19 @@ Azure Stream Analytics is a managed event-processing engine set up real-time ana
 
    ![Save Input](images/11_Save_IoTHub.png)
 
-1. Go back your **Stream Analytics Job** in *iot* RG in the Azure portal and click on **Outputs** as shown in the image below. 
+1. Go back your **Stream Analytics Job** in *iot* RG in the Azure portal and click on **Outputs** as shown in the image below.
 
    ![Add Data Lake Store](images/12_Add_Data_Lake_Store.png)
 
-1. Add Data Lake Store as Output for Streaming Job. In the *Outputs* page, click on **+ Add** and select **Data Lake Store** output sink.
+1. Add Data Lake Storage as Output for Streaming Job. In the *Outputs* page, click on **+ Add** and select **Data Lake Storage Gen1** output sink.
 
-   ![Add Output](images/13_Add_Output.png)
+   ![Add Output](images/Add_Output.png)
 
-1. Provide an **Output Alias** and select the Data Lake Store account provided to you. Under *Path prefix pattern*, provide folder structure to stream data to the store **/workshop/streaming/{date}/{time}** with Date=YYYY/MM/DD format and Time=HH format will equate to /workshop/streaming/2018/03/30/11 on the store. Select *Authentication mode* as **User Token** and click on **Authorize**.
+1. Provide an **Output Alias** and select the Data Lake Storage account provided to you. Under *Path prefix pattern*, provide folder structure to stream data to the store **/workshop/streaming/{date}/{time}** with Date=YYYY/MM/DD format and Time=HH format will equate to /workshop/streaming/2018/03/30/11 on the store. Select *Authentication mode* as **User Token** and click on **Authorize**.
 
    ![Provide Folder Structure](images/14_Save_Output.png)
 
-1. You will have to Authorize data lake store connection for Stream analytics to have access to be able to write to data lake store
+1. You will have to Authorize data lake storage connection for Stream analytics to have access to be able to write to data lake storage
 
    - Multi-factor authentication based on OAuth2.0
    - Integration with on-premises AD for federated authentication
@@ -93,7 +93,7 @@ Azure Stream Analytics is a managed event-processing engine set up real-time ana
 
 ### Start Streaming Analytics Job
 
-1. Start the stream job which will read data from IoTHub and store data in Data lake Store. In **Stream Analytics Job** in *iot* RG in the Azure portal and under *Overview* Page, click on **Start**
+1. Start the stream job which will read data from IoTHub and store data in Data lake Storage. In **Stream Analytics Job** in *iot* RG in the Azure portal and under *Overview* Page, click on **Start**
 
    ![Start Job](images/20_Start_Stream_Analytics_Job.png)
 
@@ -101,13 +101,13 @@ Azure Stream Analytics is a managed event-processing engine set up real-time ana
 
    ![Pick Custom Date](images/21_Start_custom.png)
 
-1. Wait till job goes into running state. If you see any errors it could be from your query, make sure the syntax is correct.
+1. Wait till job goes into *Running* state. If you see any errors it could be from your query, make sure the syntax is correct.
 
    ![Job Running](images/22_running.png)
 
 ### Explore Streaming Data
 
-1. Go to Data Lake store data explorer and drill down to /workshop/streaming folder.You will see folders created with YYYY/MM/DD/HH format. 
+1. Go to Data Lake storage data explorer and drill down to /workshop/streaming folder.You will see folders created with YYYY/MM/DD/HH format. 
 
    ![Explore Streaming Data](images/23_datalake_store_explore_streaming_data.png)
 
