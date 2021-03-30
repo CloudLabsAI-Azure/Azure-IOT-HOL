@@ -16,7 +16,7 @@ In this lab Learn how to
 
 ## Create Sample Data and Install Extensions
 
-Click on Sample scripts 
+In the **Azure portal** navigate to the IoT resource group select **Data Lake Analytics** resource and Click on Sample scripts.
 
 ![Create Sample Data](images/04_Create_Data_Lake_Analytics_Sample_Scripts.png)
 
