@@ -139,19 +139,14 @@ Run Samples to learn Data Lake Analytics
                rec["time"] AS time
        FROM @jsonify;
 
-
-
    //Output the file to a tool of your choice.
 
    OUTPUT @columnized
    TO @"/workshop/output/out.csv"
    USING Outputters.Csv();
-
    ```
 
-#### Register two assemblies Newtonsoft and Samples.formats. Download the dlls from /libs folder and register
-
-1. Press ***ctrl+shift+P*** to get the search bar on the top and search for the **>adl: register** and click on **ADL: Register Assembly** from the the search results. As you performed in the steps above select your **Data Lake Analytics Account** and *master key*.
+1. Register two assemblies Newtonsoft and Samples.formats. Download the dlls from /libs folder and register
 
    ![U-SQL Analytics](images/21_Register_Assembly_Command.png)
 
