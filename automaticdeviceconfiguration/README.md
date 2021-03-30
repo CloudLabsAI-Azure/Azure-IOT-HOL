@@ -148,7 +148,7 @@ Since multiple configurations may target the same device, you should give each c
 
    ![Create App](images/step4.png)
 
-### Step 4: Review Configuration
+### Step 5: Review Configuration
 
 1. Review your configuration information, then select **Create**.
 
