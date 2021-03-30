@@ -62,4 +62,4 @@ To Add Cosmos DB as output to Stream Analytics Job you will need to Stop the job
 
 1. Use Cosmos DB data explorer to view data being streamed from IoTHub to Cosmos DB. In the **Cosmos DB Account** in *iot* RG and click on **Data Explorer** on the left pane and view the data as mentioned in the screenshot below.
 
-![Stream Data to Cosmos DB](images/11_cosmosdb_data_explorer.png)
+   ![Stream Data to Cosmos DB](images/11_cosmosdb_data_explorer.png)
