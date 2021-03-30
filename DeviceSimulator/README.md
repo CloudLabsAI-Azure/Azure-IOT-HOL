@@ -85,4 +85,4 @@ Learn how to set up a Device Simulator using Azure IoT Suite and Connect to IoTH
 
 1. To check the new device created, go to the IotHub resource deployed in the new RG. Under *Explorers* in the left pane, click on **IoT devices** and scroll down to view the devices.
 
-![Simulation Devices](images/09_simulated_devices.png)
+   ![Simulation Devices](images/09_simulated_devices.png)

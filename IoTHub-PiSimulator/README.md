@@ -18,7 +18,7 @@ Connect a Simulator to your IoT Hub and stream data.
 
    ![Resource Group](images/new.png)
 
-1. Enter a **Device ID** as **pi-simulator** and click **Save**. 
+1. Enter a **Device ID** as **pi-simulator** and click **Save**.
 
    ![Resource Group](images/new1.png)
 
