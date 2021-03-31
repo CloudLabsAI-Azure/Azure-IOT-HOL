@@ -20,7 +20,11 @@ In this lab you will learn how to
 
    ![Select HTTP Request](images/04_Http_Request.png)
 
-1. Click on **Use sample payload to generate schema** and provide the Sample Payload mentioned below
+1. Click on **Use sample payload to generate schema**, then update and provide the Sample Payload mentioned below
+
+   * **Subscription ID**: Copy from the Lab **Environment Details** tab
+   * **Resource group name**: Copy from the Lab **Environment Details** tab
+   * **IoT hub name**: Copy from the **iot Resource group**
 
    ![Provide Sample Payload](images/05_Sample_Payload.png)
 
