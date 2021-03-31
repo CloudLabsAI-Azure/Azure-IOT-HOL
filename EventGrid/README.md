@@ -23,7 +23,7 @@ In this lab you will learn how to
 1. Click on **Use sample payload to generate schema**, then update and provide the Sample Payload mentioned below
 
    * **Subscription ID**: Copy from the Lab **Environment Details** tab
-   * **Resource group name**: Copy from the Lab **Environment Details** tab
+   *  **Resource group name**: iot
    * **IoT hub name**: Copy from the **iot Resource group**
 
    ![Provide Sample Payload](images/05_Sample_Payload.png)
